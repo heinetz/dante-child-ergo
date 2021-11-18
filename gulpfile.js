@@ -1,16 +1,16 @@
 var gulp = require('gulp'),
     plugins = require('gulp-load-plugins')(),
-    sass = require('gulp-sass'),
+    sass = require('gulp-sass')(require('sass')),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     pxtorem = require('postcss-pxtorem'),
-    mqpacker = require('css-mqpacker'),
+    mqpacker = require('node-css-mqpacker'),
     cssnano = require('cssnano'),
     uncss = require('postcss-uncss'),
     eslint = require('gulp-eslint'),
     sourceMaps = require('gulp-sourcemaps'),
     browserSync = require('browser-sync').create(),
-    uglify = require('gulp-uglify'),
+    uglify = require('gulp-terser'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     imagemin = require('gulp-imagemin'),
@@ -27,7 +27,7 @@ var gulp = require('gulp'),
 var sassPaths = ['./node_modules'];
 
 // Define server
-var server = 'example.dev';
+var server = 'ergotherapie-hamburg-mitte.de.test/';
 
 // declare file and folder paths
 var baseDir = 'src';
@@ -264,7 +264,6 @@ gulp.task('dist:uncss', function () {
 gulp.task('dist:js', ['js'], function () {
     return gulp.src([buildFolder + '/js/main.js'])
         .pipe(rename({suffix: '.min'}))
-        .pipe(uglify({preserveComments: 'license'}))
         .pipe(gulp.dest(distFolder + '/js'));
 });
 
