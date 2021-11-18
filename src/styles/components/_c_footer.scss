@@ -6,6 +6,17 @@
         background-color: $red;
         border: none;
 
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &:before,
+            &:after{
+                display:none;
+            }
+        }
+
         * {
             font-size: 14PX!important;
             line-height: 22PX;
