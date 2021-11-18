@@ -1,0 +1,19 @@
+.body-ergo #footer-wrap {
+    section#footer {
+        display: none;
+    }
+    footer#copyright {
+        background-color: $red;
+        border: none;
+
+        * {
+            font-size: 14PX!important;
+            line-height: 22PX;
+            color: $light;
+        }
+    }
+}
+
+/* menu */
+#menu-ergo-footer{
+}

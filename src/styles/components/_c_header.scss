@@ -1,0 +1,26 @@
+.body-ergo #header-section {
+    &:before,
+    & .sticky-header {
+        background: $yellow!important;
+    }
+}
+
+#logo img.standard{
+    //content:url(http://ergotherapie-hamburg-mitte.de.test/wordpress/wp-content/uploads/2021/11/logo_300.png)
+}
+
+/* menu */
+nav#main-navigation{
+    .menu[id^='menu-ergo-top']{
+        li {
+            font-size: 16PX;
+            font-weight: 700;
+            & > a{
+                color: $red;
+                span.nav-line {
+                    background-color: $red;
+                }
+            }
+        }
+    }
+}

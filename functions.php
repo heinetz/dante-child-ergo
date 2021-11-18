@@ -44,4 +44,12 @@ add_action( 'wp_footer', function () { ?>
         document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.11'><\/script>".replace("HOST", location.hostname));
         //]]>
     </script>
+
 <?php } );
+
+// Add Body-Class
+function theme_body_class($classes) {
+    $classes[] = 'body-ergo';
+    return $classes;
+}
+add_filter('body_class', 'theme_body_class');
