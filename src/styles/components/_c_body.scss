@@ -1,6 +1,22 @@
-body.body-ergo{
-    font-family: 'Noto Sans', sans-serif;
-    color: $red;
-    font-size: 16PX;
-    line-height: 22PX;
+.body-ergo{
+    &,
+    & *{
+        @include text-type-copy;
+    }
+
+    p{
+        @include text-type-copy;
+    }
+
+    h1 {
+        @include text-type-h1;
+    }
+
+    h2 {
+        @include text-type-h2;
+    }
+
+    h5 {
+        @include text-type-h5;
+    }
 }

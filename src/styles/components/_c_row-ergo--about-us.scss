@@ -1,0 +1,53 @@
+.row-ergo--about-us{
+
+    .row-ergo__header{
+        margin-bottom: 50px
+    }
+
+    &__image{
+
+        .spb_wrapper{
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+
+    &__textbox{
+        .spb_wrapper {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        &:before {
+            content: "";
+            display: block;
+        }
+
+        &.col-sm-3:before {
+            padding-top: 100%;
+        }
+
+        &.col-sm-9:before {
+            padding-top: 33.3%;
+        }
+
+        p{
+            margin-right: 30px;
+        }
+
+        strong{
+            font-weight: 700!important;
+        }
+    }
+
+    h4{
+        @include text-type-h3;
+        text-align: center;
+        border-top:3px solid $yellow;
+        margin-top: 15px!important;
+        padding-top: 15px;
+    }
+}

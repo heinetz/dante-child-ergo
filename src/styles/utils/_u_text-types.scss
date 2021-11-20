@@ -1,0 +1,41 @@
+// text-types
+
+@mixin text-type-default {
+    font-size: 16PX;
+    line-height: normal;
+    font-family: 'Noto Sans', sans-serif;
+    color: $red;
+}
+
+@mixin text-type-copy {
+    @include text-type-default;
+    line-height: 22PX;
+}
+
+@mixin text-type-headline {
+    @include text-type-default;
+    font-family: 'Noto Sans Light', sans-serif;
+}
+
+@mixin text-type-h1 {
+    @include text-type-headline;
+    font-size: 50PX;
+}
+
+@mixin text-type-h2 {
+    @include text-type-headline;
+    font-size: 36PX;
+}
+
+@mixin text-type-h3 {
+    @include text-type-headline;
+    font-size: 20PX;
+}
+
+@mixin text-type-h5 {
+    @include text-type-default;
+    font-size: 20PX;
+    font-weight: 700;
+    margin-top: 0;
+
+}

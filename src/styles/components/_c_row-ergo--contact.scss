@@ -1,0 +1,19 @@
+.row-ergo--contact{
+
+    &__image{
+        img {
+            max-height: 150px;
+            width: auto;
+            float: right;
+            padding: 0 30px!important;
+        }
+        prop: val;
+    }
+
+    &__textbox{
+        strong{
+            font-weight: 700!important;
+        }
+    }
+
+}

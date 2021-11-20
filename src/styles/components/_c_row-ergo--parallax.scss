@@ -1,0 +1,22 @@
+.row-ergo--parallax{
+    height: 640px;
+    background-size: auto;
+    background-position: top;
+
+    & > .spb_content_element{
+        position: absolute!important;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+
+        &:before {
+            content: "";
+            left: 0;
+            right: 0;
+            position: absolute;
+            height: 100%;
+            background: white;
+            opacity: 0.5;
+        }
+    }
+}

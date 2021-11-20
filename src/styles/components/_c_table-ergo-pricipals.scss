@@ -1,0 +1,32 @@
+.table-ergo-pricipals{
+    display: flex;
+    justify-content: center;
+
+    .spb_wrapper{
+        background: white;
+        padding: 10px 50px;
+        margin: 15px 0 15px;
+        border-radius: 20px;
+    }
+    table.sf-table{
+        width: auto;
+
+        th, td{
+            text-align: center;
+            padding:10px;
+            border-bottom: 3px solid $yellow;
+        }
+
+        th{
+            @include text-type-h3;
+        }
+
+        td{
+            font-weight: 700;
+        }
+
+        tr:last-child td{
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.icon-box-ergo{
+    margin-bottom: 0;
+
+    .sf-icon-box{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding-left: 10px;
+        cursor: pointer;
+        padding-right: 10px;
+
+        .inner{
+            padding-top: 100%;
+
+            &:before {
+                content: "";
+                padding-top: 100%;
+                position: absolute;
+            }
+
+            .front,
+            .back{
+                border: none;
+                border-radius: 50%;
+            }
+
+            .front {
+                bottom: 0;
+                padding: 0;
+                position: absolute;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $yellow;
+
+                i{
+                    display: none;
+                }
+
+                h3{
+                    margin: 0;
+                    color: $red!important;
+                    font-family: 'Noto Sans';
+                    font-style: italic;
+                    font-weight: 700;
+                }
+            }
+
+            .back{
+                background: $red;
+
+                table{
+                    margin-top: 0;
+                }
+
+                h3{
+                    display:none;
+                }
+
+                .sf-icon-box-content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    height: 100%;
+                    color: $light;
+                }
+
+                br{
+                    display: none;
+                }
+
+                a{
+                    color: $light;
+                    text-decoration: underline;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

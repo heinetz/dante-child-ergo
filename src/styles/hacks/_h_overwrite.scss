@@ -1,0 +1,16 @@
+.body-ergo{
+
+    h1, h2, h3 {
+        margin-bottom:0;
+    }
+
+    .blank_spacer{
+        min-height: 0;
+    }
+
+    @media (min-width: 1200px) {
+        .container:not(.row-content-width > .container) {
+            width: 970px;
+        }
+    }
+}
