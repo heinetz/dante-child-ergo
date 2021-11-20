@@ -22,6 +22,8 @@
     }
 
     &--gallery{
+        padding-bottom: 0;
+
         &:before{
             @include header-bar;
             margin-top: 20px;

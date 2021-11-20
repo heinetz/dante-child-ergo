@@ -1,12 +1,18 @@
 .icon-box-ergo{
     margin-bottom: 0;
 
+    .spb_wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
     .sf-icon-box{
         margin-top: 25px;
         margin-bottom: 25px;
         padding-left: 10px;
         cursor: pointer;
         padding-right: 10px;
+        max-width: 300px;
 
         .inner{
             padding-top: 100%;
@@ -39,10 +45,8 @@
 
                 h3{
                     margin: 0;
+                    @include text-type-h3;
                     color: $red!important;
-                    font-family: 'Noto Sans';
-                    font-style: italic;
-                    font-weight: 700;
                 }
             }
 

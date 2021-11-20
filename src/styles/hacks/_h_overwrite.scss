@@ -6,6 +6,8 @@
 
     .blank_spacer{
         min-height: 0;
+        height: 30px!important;
+        position: absolute;
     }
 
     @media (min-width: 1200px) {

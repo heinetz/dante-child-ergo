@@ -8,12 +8,16 @@
 
         .container {
             display: flex;
-            align-items: center;
+            align-items: end;
             justify-content: space-between;
 
             &:before,
             &:after{
                 display:none;
+            }
+
+            #menu-ergo-footer{
+                margin:0!important;
             }
         }
 
@@ -23,8 +27,4 @@
             color: $light;
         }
     }
-}
-
-/* menu */
-#menu-ergo-footer{
 }

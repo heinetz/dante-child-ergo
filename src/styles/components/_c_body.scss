@@ -1,4 +1,5 @@
 .body-ergo{
+
     &,
     & *{
         @include text-type-copy;
@@ -16,7 +17,13 @@
         @include text-type-h2;
     }
 
-    h5 {
-        @include text-type-h5;
+    h4 {
+        @include text-type-h4;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    html{
+        font-size:100%!important;
+        }
 }

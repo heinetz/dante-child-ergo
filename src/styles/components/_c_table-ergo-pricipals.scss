@@ -18,7 +18,8 @@
         }
 
         th{
-            @include text-type-h3;
+            @include text-type-h4;
+            text-transform: none;
         }
 
         td{

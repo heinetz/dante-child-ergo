@@ -1,17 +1,21 @@
 (function ($, window, undefined) {
     //jQuery goes here
 
-    //Optional: Load Google Fonts Asynchronously with two sample fonts (Roboto Condensed and Lato)
-    window.WebFontConfig = {
-        google: {families: ['Roboto+Condensed:400,700:latin', 'Lato:400,700:latin']}
-    };
-    (function () {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-            '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-    })();
+    //remove bootstrap-helper-class from Swift Page Builder
+    $('.icon-box-ergo').removeClass('col-sm-2');
+
+	/*			parse menu					*/
+	// $('a[href*=#]:not([href=#])').each(function(){
+	// 	$(this).attr('href', $(this)[0].href.replace(location.href.replace(location.hash,''), ''));
+	// });
+
+	// $('a[href="'+location.href.replace(location.hash,'')+'"]').on('click', function(){
+	// 	$('html, body').stop().animate({
+	// 		scrollTop: 0
+	// 	}, 600, 'easeInOutExpo');
+
+	// 	history.pushState('', document.title, window.location.pathname + window.location.search);
+	// 	return false;
+	// });
+
 })(jQuery, window);

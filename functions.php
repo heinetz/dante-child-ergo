@@ -1,5 +1,6 @@
 <?php
 // Define Environment
+//putenv("WP_ENV=production");
 define( 'WP_ENV', getenv( 'WP_ENV' ) ? getenv( 'WP_ENV' ) : 'development' );
 
 // Check Environment
@@ -12,6 +13,7 @@ if ( WP_ENV === 'development' || WP_ENV === 'staging' ) {
     $GLOBALS['$styles']     = "style.min.css";
     $GLOBALS['$js']         = "main.min.js";
 }
+
 
 // Enqueue Styles
 add_action( 'wp_enqueue_scripts', 'theme_child_enqueue_styles' );
@@ -39,13 +41,14 @@ function theme_child_enqueue_scripts() {
 }
 
 // If using Docker Starter, uncomment this in your development environment
+if ( WP_ENV === 'development') {
 add_action( 'wp_footer', function () { ?>
     <script id="__bs_script__">//<![CDATA[
         document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.11'><\/script>".replace("HOST", location.hostname));
         //]]>
     </script>
-
 <?php } );
+}
 
 // Add Body-Class
 function theme_body_class($classes) {

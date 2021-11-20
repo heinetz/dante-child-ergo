@@ -5,10 +5,13 @@
     }
 
     &__image{
+        display: flex;
+        justify-content: center;
 
         .spb_wrapper{
             border-radius: 50%;
             overflow: hidden;
+            max-width: 300px;
         }
     }
 
@@ -41,10 +44,20 @@
         strong{
             font-weight: 700!important;
         }
+
+        @media only screen and (max-width: 768px) {
+            .spb_wrapper {
+                position: relative;
+            }
+
+            &:before {
+                display: none;
+            }
+        }
     }
 
     h4{
-        @include text-type-h3;
+        @include text-type-h4;
         text-align: center;
         border-top:3px solid $yellow;
         margin-top: 15px!important;
