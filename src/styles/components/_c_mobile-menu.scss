@@ -1,0 +1,26 @@
+.body-ergo{
+    #mobile-menu,
+    .mobile-menu-close{
+        &,
+        & *{
+            color: white;
+        }
+    }
+
+    #mobile-menu{
+        padding-top: 65px;
+    }
+
+    .mobile-search-form{
+        display:none;
+    }
+
+    #mobile-menu-wrap {
+        width: 100vw;
+        right: -100vw;
+    }
+
+    &.mobile-menu-open #mobile-menu-wrap {
+        transform: translate3d(-100vw, 0, 0);
+    }
+}

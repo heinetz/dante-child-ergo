@@ -12,7 +12,6 @@
         padding-left: 10px;
         cursor: pointer;
         padding-right: 10px;
-        max-width: 300px;
 
         .inner{
             padding-top: 100%;
@@ -80,6 +79,16 @@
                     margin-top: 10px;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .icon-box-ergo{
+
+        .sf-icon-box{
+            max-width: 300px;
         }
     }
 }

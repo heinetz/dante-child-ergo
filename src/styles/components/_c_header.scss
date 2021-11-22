@@ -44,12 +44,15 @@
 
         .menu[id^='menu-ergo-top']{
             li {
-                font-size: 16PX;
                 font-weight: 700;
                 padding: 5px 15px 0px;
 
                 & > a{
+                    font-size: 16PX;
+                    line-height: 22PX;
+                    user-select: none;
                     color: $red;
+                    padding-top: 6px!important;
                     span.nav-line {
                         background-color: $red;
                     }
