@@ -19,4 +19,10 @@
             opacity: 0.5;
         }
     }
+
+    @media only screen and (max-width: 991px) {
+        background-size: contain;
+        height: 0;
+        padding-top: 66.7%!important;
+    }
 }
