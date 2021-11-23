@@ -4,7 +4,6 @@ var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     pxtorem = require('postcss-pxtorem'),
-    mqpacker = require('node-css-mqpacker'),
     cssnano = require('cssnano'),
     uncss = require('postcss-uncss'),
     eslint = require('gulp-eslint'),
@@ -223,7 +222,6 @@ gulp.task('clean:dist', function () {
 // prepare css files for production environment
 gulp.task('dist:css', ['sass'], function () {
     var processors = [
-        mqpacker,
         cssnano({
             discardComments: {
                 removeAll: true

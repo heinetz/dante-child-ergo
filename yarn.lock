@@ -5895,11 +5895,6 @@ minimist@^1.1.0, minimist@^1.1.3, minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
-minimist@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
-  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
-
 mkdirp@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.3.0.tgz#1bbf5ab1ba827af23575143490426455f481fe1e"
@@ -5997,14 +5992,6 @@ nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
-
-node-css-mqpacker@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/node-css-mqpacker/-/node-css-mqpacker-8.0.1.tgz#bb544fde0dad48da030730ad3a082bc2b2e3a40a"
-  integrity sha512-JRnye9G2af0d6Nt7cOwbFqIwavti3wa9wijRr++xUj4RPk05Gx2xQeTOkb0fDWXHreysk0gMeP3Hj54vV3KICQ==
-  dependencies:
-    minimist "^1.2.5"
-    postcss "^7.0.32"
 
 node-notifier@^9.0.1:
   version "9.0.1"
