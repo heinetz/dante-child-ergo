@@ -16,4 +16,17 @@
             width: 970px;
         }
     }
+
+    @media only screen and (max-width: 767px) {
+        .fw-row > .container {
+            padding-left: 0px!important;
+            padding-right: 0px!important;
+        }
+    }
+
+    @media only screen and (max-width: 991px) {
+        .spb_gallery_widget .gallery-nav {
+            display: block;
+        }
+    }
 }
