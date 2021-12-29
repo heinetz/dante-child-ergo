@@ -1,0 +1,11 @@
+.icon{
+    &-download{
+        background-image: url(../images/icon-download.png);
+        display: inline;
+        background-size: contain;
+        padding: 0 10px;
+        margin-right: 10px;
+        background-repeat: no-repeat;
+    }
+
+}

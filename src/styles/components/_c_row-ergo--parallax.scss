@@ -2,6 +2,7 @@
     height: 640px;
     background-size: auto;
     background-position: top;
+    max-height: calc( 100vh - 130px );
 
     & > .spb_content_element{
         position: absolute!important;

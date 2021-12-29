@@ -15,4 +15,14 @@
         }
     }
 
+    a{
+        margin: 0 50px;
+        user-select: none;
+        color: $red!important;
+    }
+
+    .downloads-area {
+        margin: 20px 0 30px;
+    }
+
 }
