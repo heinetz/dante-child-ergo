@@ -1,5 +1,12 @@
 .icon-box-ergo{
     margin-bottom: 0;
+    flex-shrink: 0;
+
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     .spb_wrapper{
         display: flex;
@@ -66,6 +73,8 @@
                     justify-content: center;
                     flex-direction: column;
                     height: 100%;
+                    @include text-type-copy;
+                    line-height: 28PX;
                     color: $light;
                 }
 
@@ -86,6 +95,10 @@
 @media only screen and (max-width: 767px) {
 
     .icon-box-ergo{
+
+        &__wrapper{
+            display:block;
+        }
 
         .sf-icon-box{
             max-width: 300px;

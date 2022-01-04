@@ -6,12 +6,33 @@
             float: right;
             padding: 0 30px!important;
         }
-        prop: val;
+
+        figcaption{
+            display: none!important;
+        }
     }
 
     &__textbox{
         strong{
             font-weight: 700!important;
+        }
+    }
+
+    &__map{
+        background: #9d9d9c;
+        width: 100vw!important;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        img{
+            width: 550px;
+            left:50%;
+            transform: translateX(-50%);
+        }
+
+        figcaption{
+            display: none!important;
         }
     }
 

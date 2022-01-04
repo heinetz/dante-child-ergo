@@ -20,6 +20,7 @@
 @mixin text-type-headline {
     @include text-type-default;
     font-family: 'Noto Sans Light', sans-serif;
+    font-weight:500;
 }
 
 @mixin text-type-h1 {
@@ -40,7 +41,7 @@
 }
 
 @mixin text-type-h4 {
-    @include text-type-headline;
+    @include text-type-default;
     font-size: 20PX;
     margin-top: 0;
 

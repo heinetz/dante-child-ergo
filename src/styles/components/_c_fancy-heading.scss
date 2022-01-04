@@ -1,0 +1,36 @@
+.body-ergo{
+
+    .fancy-heading{
+        prop: val;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center -420px !important;
+        height: 0;
+        border: none;
+
+        .heading-text{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            .entry-title{
+                color: $red!important;
+                font-size: 40PX;
+                z-index: 1;
+                position: relative;
+            }
+
+            &:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: white;
+                opacity: 0.5;;
+            }
+        }
+    }
+}

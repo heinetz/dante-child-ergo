@@ -7,6 +7,12 @@
 
     p{
         @include text-type-copy;
+        margin: 0 0 22PX;
+    }
+
+    strong, b{
+        @include text-type-copy;
+        font-weight: 700!important;
     }
 
     h1 {
@@ -24,6 +30,10 @@
     h5 {
         @include text-type-copy;
         font-weight: bold;
+    }
+
+    hr {
+        border-top: 3px solid $yellow;
     }
 }
 

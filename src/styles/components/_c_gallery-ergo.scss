@@ -13,10 +13,23 @@
             height: 50px;
             top: 20px;
             bottom: auto;
-            opacity: 0.5;
-            background: white;
+            background: transparent;
             padding:0;
             @include text-type-h2;
+            z-index: 1;
+        }
+
+        .flex-active-slide:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 20px;
+            bottom: 0;
+            background: white;
+            z-index: 1;
+            opacity: 0.5;
+            height: 50px;
         }
 
         /* directionNav */
@@ -70,7 +83,7 @@
                     margin: 0 7px;
 
                     &.flex-active-slide{
-                        background: rgb(255,255,255, 1);
+                        background: $red;
                     }
 
                     img{
