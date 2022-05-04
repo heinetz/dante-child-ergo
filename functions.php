@@ -1,6 +1,6 @@
 <?php
 // Define Environment
-putenv("WP_ENV=development");
+putenv("WP_ENV=production");
 define( 'WP_ENV', getenv( 'WP_ENV' ) ? getenv( 'WP_ENV' ) : 'development' );
 
 // Check Environment

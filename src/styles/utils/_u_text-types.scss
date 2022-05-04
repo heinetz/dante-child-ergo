@@ -46,3 +46,14 @@
     margin-top: 0;
 
 }
+
+@mixin text-type-small {
+    @include text-type-copy;
+    font-size: 12PX;
+    line-height: 26PX;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}

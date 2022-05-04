@@ -10,6 +10,10 @@
         margin: 0 0 22PX;
     }
 
+    small{
+        @include text-type-small;
+    }
+
     strong, b{
         @include text-type-copy;
         font-weight: 700!important;
@@ -34,6 +38,23 @@
 
     hr {
         border-top: 3px solid $yellow;
+    }
+
+    &.page-impress{
+        ol{
+            padding-left: 30px;
+            margin: 10px 0;
+        }
+
+        ul > li > ol > li{
+            &::marker{
+                font-weight: bold;
+            }
+
+            li{
+                padding: 3px 0;
+            }
+        }
     }
 }
 
